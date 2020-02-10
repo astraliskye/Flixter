@@ -7,14 +7,14 @@
 
     <ImageView
         android:id="@+id/ivPoster"
-        android:layout_width="100dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
-        tools:srcCompat="@tools:sample/avatars"/>
+        tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/tvTitle"
@@ -22,27 +22,27 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="77dp"
+        android:layout_marginEnd="220dp"
         android:layout_toEndOf="@+id/ivPoster"
         android:textColor="@color/whiteFont"
-        android:textColorHint="@color/whiteFont"
+        android:textColorLink="@color/whiteFont"
         android:textSize="24sp"
-        tools:text="Ip Man 4: The Finale"
-        android:transitionName="title" />
+        tools:text="Title" />
 
     <TextView
         android:id="@+id/tvOverview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvTitle"
-        android:layout_marginStart="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="0dp"
         android:layout_toEndOf="@+id/ivPoster"
         android:textColor="@color/whiteFont"
         android:textColorHint="@color/whiteFont"
-        android:transitionName="overview"
-        tools:text="Following the death of his wife, Ip Man travels to San Francisco to ease tensions between the local kung fu masters and his star student, Bruce Lee, while searching for a better future for his son." />
+        tools:text="Overview" />
 </RelativeLayout>

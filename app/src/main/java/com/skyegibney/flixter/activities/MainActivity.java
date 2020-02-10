@@ -1,4 +1,4 @@
-package com.skyegibney.flixter;
+package com.skyegibney.flixter.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -6,9 +6,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
+import com.skyegibney.flixter.R;
 import com.skyegibney.flixter.adapters.MovieAdapter;
 import com.skyegibney.flixter.models.Movie;
 
@@ -51,8 +53,6 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onSuccess(int statusCode, Headers headers, JSON json)
             {
-                Log.d(TAG, "onSuccess");
-
                 JSONObject jsonObject = json.jsonObject;
 
                 try
